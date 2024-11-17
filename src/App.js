@@ -34,7 +34,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename="/Movie-Portal">
       <div>
         <Header />
         <br />
@@ -90,7 +90,9 @@ function App() {
         </div>
       </div>
     </Router>
+    
   );
+
 }
 
 export default App;
