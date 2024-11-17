@@ -1,6 +1,6 @@
 export const fetchMovies = async (searchText, moviesCallBack, errorCallBack) => {
     try {
-        const response = await fetch(`http://www.omdbapi.com/?s=${searchText}&apikey=d041143e&type=movie`);
+        const response = await fetch(`https://www.omdbapi.com/?s=${searchText}&apikey=d041143e&type=movie`);
         const data = await response.json();
 
         if (data.Response === 'True') {
@@ -21,7 +21,7 @@ export const fetchMovies = async (searchText, moviesCallBack, errorCallBack) => 
 
 const fetchMovieDetails = async (id, errorCallBack) => {
     try {
-        const response = await fetch(`http://www.omdbapi.com/?i=${id}&plot=full&apikey=d041143e`);
+        const response = await fetch(`https://www.omdbapi.com/?i=${id}&plot=full&apikey=d041143e`);
         const data = await response.json();
 
         if (data.Response === 'True') {
