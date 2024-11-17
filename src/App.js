@@ -34,7 +34,8 @@ function App() {
   };
 
   return (
-    <Router basename="/Movie-Portal">
+    <Router basename="/Movie-Portal"
+    future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <div>
         <Header />
         <br />
